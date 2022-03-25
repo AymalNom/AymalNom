@@ -1,0 +1,146 @@
+version: "3.0"
+nlu:
+- intent: greet_en
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: browse_service_en
+  examples: |
+    - Browse Services
+    - Browse Service
+    - Service Browse
+    - Browse
+    - Services
+- intent: inquire_city
+  examples: |
+    - [Abu Dhabi](Abu Dhabi)
+    - [Ajman](Ajman)
+    - [Dubai](Dubai)
+    - [Fujairah](Fujairah)
+    - [Ras Al-Khaimah](Ras Al-Khaimah)
+    - [Sharjah](Sharjah)
+    - [Umm Al Quwain](Umm Al Quwain)
+    - [Dhabi](Abu Dhabi)
+    - [jman](Ajman)
+    - [Dubi](Dubai)
+    - [Fujrah](Fujairah)
+    - [Al-Khaimah](Ras Al-Khaimah)
+    - [Shajah](Sharjah)
+    - [Al Quwain](Umm Al Quwain)
+    - [Dhabi]{"entity": "Abu Dhabi", "value": "Abu Dhabi"}
+- intent: greet_ar
+  examples: |
+    - أهلا
+    - هلا
+    - أهلا بك
+    - صباح الخير
+    - مساء الخير
+    - مرحبا
+    - دعنا نذهب
+    - اهلا يا دودى
+    - طاب مسائك
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - browser services
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- synonym: Dubai
+  examples: |
+    - Duba
+    - Dubai
+    - Dubia
+    - Dubaian
+- synonym: Abu Dhabi
+  examples: |
+    - Dhabi
+    - Abu Dhabi
+    - Dhabi Abu
+    - Abu
+    - Dhab
+- synonym: Ajman
+  examples: |
+    - Ajman
+    - Ajm
+    - Ajam
+    - Ajma
+    - AJ
+- synonym: Fujairah
+  examples: |
+    - Fujairah
+    - Fujiarah
+    - Fuj
+    - Fujai
+    - Fujair
+    - Fujairh
+    - Fujiairah
+    - Fujarah
+- synonym: Ras Al-Khaimah
+  examples: |
+    - Ras
+    - Ras AL
+    - Ras Al-Khaimah
+    - Al-Khaimah
+    - Al Khaimah
+    - Khaimah
+    - Ras Khaimah
+    - Ras Al Khaimah
+- synonym: Sharjah
+  examples: |
+    - Sharjah
+    - Shrjah
+    - Shjah
+    - Sarjah
+    - Sajah
+- synonym: Umm Al Quwain
+  examples: |
+    - Umm Al Quwain
+    - Umm Al
+    - Al Quwain
+    - al Quwain
+    - Umm Quwain
+    - AL Quwai
+    - Umm Quwai
+    - Umm
+    - Al Quwai

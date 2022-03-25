@@ -1,0 +1,28 @@
+version: "3.0"
+
+stories:
+
+- story: Browse Service English
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: browse_service_en
+  - action: action_ask_city
+  - intent: inquire_city
+
+- story: interactive_story_1
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: browse_service_en
+  - action: action_ask_city
+
+- story: interactive_story_1
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: browse_service_en
+  - action: action_ask_city
+  - intent: inquire_city
+    entities:
+    - Abu Dhabi: Abu Dhabi
