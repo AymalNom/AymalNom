@@ -1,0 +1,47 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet_en
+- inquire_city
+- browse_service_en
+- goodbye
+- greet_ar
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+entities:
+- Abu Dhabi
+- Ajman
+- Dubai
+- Fujairah
+- Ras Al-Khaimah
+- Sharjah
+- Umm Al Quwain
+responses:
+  utter_greet_en:
+  - text: |
+      Hello! Thanks for connecting Feedni.
+      I am a Smart AI Bot, Chat with me naturally and Freely!
+      Lets Get Started What are you looking for?
+      Browse Services
+      Create an Account
+  utter_greet_ar:
+  - text: |
+      أهلا! شكرا لاتصال Feedni.
+      أنا روبوت ذكي للذكاء الاصطناعي ، دردش معي بشكل طبيعي وبحري!
+      لنبدأ ما الذي تبحث عنه؟
+      تصفح الخدمات
+      إنشاء حساب
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- action_ask_city
+- utter_greet_en
